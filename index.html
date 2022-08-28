@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brincadeira</title>
+    <style>
+        body{
+            background-color:#c5dad4;
+        }
+        .log-in{
+            width: 30%;
+            margin: 0 auto;
+            margin-top: 200px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        fieldset{
+            border: none;
+            border-radius: 30px;
+        }
+
+        legend{
+            margin: 0 auto;
+            position: relative;
+            bottom: 35px;
+            background-color:#7297b7;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .blocks{
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            width: 80%;
+            height: 50px;
+            background-color: #b2b9c4;
+            border: none;
+        }
+
+        #btn{
+            display: block;
+            margin: 0 auto;
+            width: 40%;
+            height: 50px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            border-style: none;
+            background-color: #7297b7;
+            color: white;
+        }
+
+        #btn:active{
+            background-color: purple;
+        }
+
+        .linha{
+            display: inline-block;
+            margin: 0 30px 0 30px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="#" method="post" class="log-in">
+        <fieldset>
+            <legend>Member Login</legend>
+            <input type="email" name="email" placeholder="Email ID" class="blocks" required autofocus>
+            <input type="password" name="senha" placeholder="Password" class="blocks" required>
+            <input type="submit" name="btn" value="Login" id="btn">
+            <label class="linha">
+            <input type="checkbox" name="check">
+            Remember me
+            </label>
+            <a href="#" class="linha"><p><i>Forgot Password?</i></p></a>
+        </fieldset>
+    </form>
+</body>
+</html>
